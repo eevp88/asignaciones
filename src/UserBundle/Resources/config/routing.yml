@@ -27,3 +27,10 @@ user_delete:
     path:    /user/delete/{id}
     defaults: { _controller: UserBundle:User:delete }
     
+user_redirec_add:
+    path:    /user/create
+    defaults:  
+        _controller: UserBundle:User:add
+        route: user_add
+        permanent: true 
+    
